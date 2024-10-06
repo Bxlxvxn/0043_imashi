@@ -1,0 +1,197 @@
+/* General reset */
+* {
+    margin: 0; /* Corrected to 0 for consistent behavior */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+/* Header with menu */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d8ff0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    background-color: #022d49;
+    border-radius: 3px;
+}
+
+.cart-icon {
+    margin-right: 20px;
+}
+
+/* Welcome section */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #358fe9;
+    margin-bottom: 15px;
+}
+
+.datetime {
+    font-size: 14px;
+    color: #333;
+}
+
+.user-info {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Courses grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+    align-items: center;
+    background-color: #e7eff6;
+}
+
+.course-container {
+    position: relative;
+    border: 3px solid #99ccff;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 220px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+}
+
+.course {
+    position: relative;
+    width: 190px;
+    height: 150px;
+    padding: 15px;
+    text-align: left; /* Center the text */
+    background-color: #dcdcdc;
+    border: 2px solid #bcbcbc;
+    box-shadow: 4px 4px 10px rgba(233, 233, 233, 0.4), 
+                inset -2px -2px 5px #3f3f3f, 
+                inset 2px 2px 5px #b0b0b0;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically within the course box */
+}
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-container h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.course-price {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 5px;
+}
+
+.form-container {
+    border: 1px solid #217ad3;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    background-color: #449ffa;
+    border-radius: 3px 3px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #2a92fa;
+    border-radius: 3px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.button {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #2f97ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #e6f2ff;
+}
+
+footer {
+    background-color: #5a9bd3;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
