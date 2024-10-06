@@ -3,50 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to E-Commerce Courses</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .welcome-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-
-        .welcome-form input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #2d8ff0;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .welcome-form input[type="submit"]:hover {
-            background-color: #217ad3;
-        }
-    </style>
+    <title>Redirecting...</title>
+    <script>
+        // Redirect to PHP page after 3 seconds
+        setTimeout(function(){
+            window.location.href = "Welcome.php";
+        }, 3000); // 3000ms = 3 seconds
+    </script>
 </head>
 <body>
-
-<div class="welcome-container">
-    <h1>Welcome to E-Commerce Video Training Courses</h1>
-    <p>Click below to proceed to the Welcome Page.</p>
-    
-    <!-- Form to submit to welcomepage.php -->
-    <form class="welcome-form" action="Welcome.php" method="GET">
-        <input type="submit" value="Go to Welcome Page">
-    </form>
-</div>
-
+    <h1>Redirecting to Welcome Page...</h1>
+    <p>If you are not redirected, <a href="welcomepage.php">click here</a>.</p>
 </body>
 </html>
