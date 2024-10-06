@@ -3,28 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Welcome to E-Commerce Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .welcome-form input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #2d8ff0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .welcome-form input[type="submit"]:hover {
+            background-color: #217ad3;
+        }
+    </style>
 </head>
 <body>
-    <div class="form-container">
-        <div class="form-header">
-            <h2>Welcome Students, Let us know you</h2>
-        </div>
-        <form action="homepage.html" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-buttons">
-                <input type="submit" value="Proceed" class="button">
-                <input type="button" value="Cancel" class="button" onclick="window.location.href='welcome.php';">
-            </div>
-        </form>
-    </div>
+
+<div class="welcome-container">
+    <h1>Welcome to E-Commerce Video Training Courses</h1>
+    <p>Click below to proceed to the Welcome Page.</p>
+    
+    <!-- Form to submit to welcomepage.php -->
+    <form class="welcome-form" action="welcomepage.php" method="GET">
+        <input type="submit" value="Go to Welcome Page">
+    </form>
+</div>
+
 </body>
 </html>
